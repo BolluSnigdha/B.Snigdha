@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Landing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #55a3d3;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            text-align: right;
+        }
+
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            background: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .about, .services, .doctors, .patient-info, .testimonials, .news, .contact {
+            background: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1{
+            color : #333
+
+        }
+
+        .service-list, .doctor-list {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item, .doctor-item, .testimonial-item, article {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer nav ul {
+            justify-content: center;
+        }
+
+        footer form {
+            margin-top: 20px;
+        }
+
+        .newsletter input, .newsletter button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .newsletter button {
+            background: #ff5722;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .service-item, .doctor-item, .testimonial-item, article {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="hosp.png" alt="Hospital Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#patient-info">Patient Info</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <h1 style="color:#9b0a61;"> Snigdha hospital</h1>
+                <p>Call Us: (123) 456-7890</p>
+                <p>Address: 123 Health St, vijayawada  City</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGpOC-VOcVcSBIJwZm2VCRg9E5Nr7BrrZvng&usqp=CAU'); background-repeat: no-repeat; background-position: center; background-size: cover;  color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center" >
+        <div class="container">
+            <h1 style="color: #333;">Providing Compassionate Care for Your Family</h1>
+            <p style="color: #333;">State-of-the-art facilities and experienced medical professionals.</p>
+            <a href="#appointment" class="cta-button">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Snigdha Hospital has been at the forefront of medical care in our community for over 50 years.
+                 Established with the mission of providing compassionate, high-quality healthcare, Snigdha hospital has grown into a state-of-the-art medical facility equipped with the latest technology and staffed by a dedicated team of medical professionals.</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services"  style="background-image: url('https://i.pinimg.com/originals/21/54/cd/2154cd17b398cf202ab361615fe313af.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;  color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="ec.png" alt="Emergency Care">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services with state-of-the-art trauma facilities.</p>
+                </div>
+                <div class="service-item">
+                    <img src="pediatrics.png" alt="Pediatrics">
+                    <h3>Pediatrics</h3>
+                    <p>Comprehensive care for children from infancy to adolescence.</p>
+                </div>
+                <!-- More services... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors" class="doctors" style="background-image: url('https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg');background-repeat: no-repeat; background-position: center; background-size: cover;  color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;">
+        <div class="container">
+            <h2>Meet Our Doctors</h2>
+            <div class="doctor-list">
+                <div class="doctor-item">
+                    <img src="john doe.png" alt="Dr. krishna">
+                    <h3>Dr. Krishna</h3>
+                    <p>Cardiologist</p>
+                </div>
+                <div class="doctor-item">
+                    <img src="sni.jpg" alt="Dr. Snishna" height="350px">
+                    <h3>Dr. Snishna</h3>
+                    <p>Pediatrician</p>
+                </div>
+                <!-- More doctors... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Information -->
+    <section id="patient-info" class="patient-info" >
+        <div class="container">
+            <h2>Patient Information</h2>
+            <p>Visiting hours: 8am - 8pm</p>
+            <p>Directions and parking information available on our website.</p>
+            <p>Download patient forms and learn about insurance options.</p>
+        </div>
+    </section>
+    <fieldset>
+    <!-- Testimonials -->
+    <section class="testimonials" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqKIaJBfUarm_Rj_AiXKb8o2WmCXsZcGE79A&usqp=CAU');background-repeat: no-repeat; background-position: center; background-size: cover;  color: black; display: flex;
+    justify-content: center;">>
+        <div class="container">
+            <h2>What Our Patients Say</h2>
+            <div class="testimonial-item">
+                <p>"The care and attention I received were outstanding. Thank you for everything!" - Jane R.</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Excellent doctors and state-of-the-art facilities. Highly recommend!" - John D.</p>
+            </div>
+            <!-- More testimonials... -->
+        </div>
+    </section>
+</fieldset>
+
+    <!-- Latest News -->
+    <section class="news" style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-technology-technology-health-doctors-image_10060.jpg');background-repeat: no-repeat; background-position: center; background-size: cover;  color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;">>
+        <div class="container">
+            <h2>Latest News</h2>
+            <article>
+                <h3>Health Tips for Summer</h3>
+                <p>Stay hydrated and protected from the sun with these tips...</p>
+            </article>
+            <article>
+                <h3>New Wing Opening</h3>
+                <p>We are excited to announce the opening of our new pediatric wing...</p>
+            </article>
+            <!-- More news... -->
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact" style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-doctor-running-minimalist-background-structure-image_66071.jpg');background-repeat: no-repeat; background-position: center; background-size: cover;  color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;">>>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" >Submit</button>
+            </form>
+            <div class="map">
+                <!-- Embedded Google Map -->
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="fb.png" alt="Facebook" height="50px" width="50px"></a>
+                <a href="#"><img src="t.png" alt="Twitter" height="50px" width="50px"></a>
+                <!-- More social media links... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Snigdha Hospital. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#patient-info">Patient Info</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <form action="#" method="post" class="newsletter">
+                <label for="newsletter-email">Subscribe to our Newsletter</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit" >Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                alert('Thank you for contacting us! We will get back to you soon.');
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
